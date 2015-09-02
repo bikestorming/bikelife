@@ -1,0 +1,214 @@
+html,
+body {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    background: url(../img/bg.png);
+}
+
+.map {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+}
+
+.map.hide {
+    opacity: 0;
+}
+
+.cover .img {
+    width: 100%;
+    height: 100%;
+    background-size: cover !important;
+}
+
+.bk-controls {
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+    background-color: rgba(136, 51, 255, 0.3);
+    height: 84px;
+    border: 1px solid #8833FF;
+    width: 168px;
+}
+
+.bk-controls button {
+    outline: none;
+    width: 50%;
+    margin: 0;
+    border: 0;
+    float: left;
+    height: 84px;
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.5);
+    transition: all 0.3s;
+}
+
+.bk-controls .button.stop {
+    display: none;
+}
+
+.bk-controls button.on {
+    background-color: rgba(136, 51, 255, 0.7);
+    color: rgba(255, 255, 255, 1);
+}
+
+.infowindow-header {
+    position: absolute;
+    top: 252px;
+    width: 100%;
+}
+
+.infowindow-header .date {
+    float: left;
+    width: 104px;
+    white-space: nowrap;
+    overflow: hidden;
+    color: #fff;
+    line-height: 39px;
+    margin-left: 5px;
+}
+
+.cool .infowindow-header {
+    background-color: rgba(96, 211, 226, 0.52);
+}
+
+.problem .infowindow-header {
+    background-color: rgba(255, 0, 0, 0.52);
+}
+
+.infowindow-header .user {
+    width: 173px;
+    float: right;
+    text-align: right;
+    height: 39px;
+    line-height: 39px;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.infowindow-header .user img {
+    float: right;
+    border-radius: 50%;
+    margin: 3px 3px 0 5px;
+    width: 30px;
+    height: 30px;
+}
+
+.cartodb-popup-content p {
+    text-align: center !important;
+    font-size: 16px !important;
+}
+
+div.cartodb-popup,
+p,
+h1,
+h2,
+h3,
+div,
+span {
+    font-family: Futura, sans-serif !important;
+}
+
+div.cartodb-popup.header.v2.header {
+    width: 300px !important;
+    -moz-box-shadow: 0 0 10px 0px rgba(51, 255, 255, 0.3);
+    -webkit-box-shadow: 0 0 10px 0px rgba(51, 255, 255, 0.3);
+    box-shadow: 0 0 10px 0px rgba(51, 255, 255, 0.3);
+    border-radius: 0;
+    background-color: transparent;
+}
+
+div.cartodb-popup.v2 div.cartodb-popup-tip-container {
+    display: none;
+}
+
+div.cartodb-popup.v2.cool div.cartodb-popup-content-wrapper {
+    background-color: rgba(50, 133, 133, 0.71) !important;
+}
+
+div.cartodb-popup.v2.cool:before {
+    border-top: 14px solid rgba(50, 133, 133, 0.71);
+}
+
+div.cartodb-popup.v2.problem div.cartodb-popup-content-wrapper {
+    background-color: rgba(255, 0, 0, 0.71) !important;
+}
+
+div.cartodb-popup.v2.problem:before {
+    border-top: 14px solid rgba(255, 0, 0, 0.71);
+}
+
+div.cartodb-popup p {
+    color: #fff;
+}
+
+div.cartodb-popup.header.with-image div.cartodb-popup-header {
+    height: 257px;
+    max-height: 257px;
+}
+
+div.cartodb-popup.v2.header.with-image div.cartodb-popup-header .cover {
+    height: 290px;
+}
+
+.leaflet-container .leaflet-control-attribution {
+    background: rgba(0, 0, 0, .7);
+    margin: 0;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.leaflet-container a {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+div.cartodb-timeslider {
+    background: rgba(136, 51, 255, 0.7);
+    border-radius: 0px;
+    border: 0px;
+    height: 84px;
+    margin-bottom: 11px;
+    box-shadow: none;
+    border: 1px solid #8833FF;
+}
+
+div.cartodb-timeslider p {
+    height: 84px;
+    line-height: 84px;
+}
+
+div.cartodb-timeslider ul li {
+    height: 84px;
+    line-height: 84px;
+    border-right: 1px solid #8833FF;
+}
+
+div.cartodb-timeslider p {
+    color: rgba(255, 255, 255, .9);
+}
+
+div.cartodb-timeslider .slider-wrapper {
+    padding: 40px 15px;
+}
+
+div.cartodb-timeslider .ui-slider {
+    background-color: #4A2977;
+}
+
+div.cartodb-timeslider .ui-slider .ui-slider-range {
+    background-color: #A164F5;
+}
+
+div.cartodb-timeslider .ui-slider .ui-slider-handle {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+li.controls {
+    border-left: 1px solid #8833FF;
+    float: right;
+    border-right: 0;
+}
+
+li.controls a {
+    line-height: 84px !important;
+    margin-top: 23px !important;
+}
