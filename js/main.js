@@ -25,15 +25,19 @@ function init() {
 
     $('[data-id=live]')[0].addEventListener('click', function() {
         if (currentViz == 'live') return false;
+
         currentViz = 'live';
         switchToMap('live', live);
         toggleOnStatus();
+        $('#bk-selected-map').html('LIVE');
     })
     $('[data-id=interactive]')[0].addEventListener('click', function() {
         if (currentViz == 'interactive') return false;
+
         currentViz = 'interactive';
         switchToMap('interactive', interactive);
         toggleOnStatus();
+        $('#bk-selected-map').html('INTERACTIVE');
     })
 }
 
