@@ -194,6 +194,7 @@ div.cartodb-timeslider {
     margin-bottom: 11px;
     box-shadow: none;
     border: 1px solid #8833FF;
+    bottom: 40px !important;
 }
 
 div.cartodb-timeslider p {
