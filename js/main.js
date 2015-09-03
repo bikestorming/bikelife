@@ -47,13 +47,13 @@ function toggleOnStatus() {
 }
 
 function switchToMap(mapId, vizId) {
-    $('#map-'+mapId).fadeIn(500);
+    $('#map-' + mapId).fadeIn(500);
     if (mapId == 'live') {
-      $('#map-interactive').fadeOut(500);
+        $('#map-interactive').fadeOut(500);
     } else {
-      $('#map-live').fadeOut(500);
+        $('#map-live').fadeOut(500);
     }
-    cartodb.createVis('map-'+mapId, 'https://bikestorming.cartodb.com/u/bkx/api/v2/viz/' + vizId + '/viz.json').done(function(vis, layers) {
+    cartodb.createVis('map-' + mapId, 'https://bikestorming.cartodb.com/u/bkx/api/v2/viz/' + vizId + '/viz.json').done(function(vis, layers) {
 
     });
 }
