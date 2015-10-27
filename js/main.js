@@ -7,7 +7,7 @@ window.addEventListener("load", init);
 
 function init() {
     cartodb.createVis('map-interactive', 'https://bikestorming.cartodb.com/u/bkx/api/v2/viz/' + interactive + '/viz.json', {
-        zoomControl: false,
+        zoomControl: true,
         fullscreen: false,
         loaderControl: false,
         detectRetina: true
@@ -15,7 +15,7 @@ function init() {
 
     });
     cartodb.createVis('map-live', 'https://bikestorming.cartodb.com/u/bkx/api/v2/viz/' + live + '/viz.json', {
-        zoomControl: false,
+        zoomControl: true,
         fullscreen: false,
         loaderControl: false,
         detectRetina: true
