@@ -9,14 +9,16 @@ function init() {
     cartodb.createVis('map-interactive', 'https://bikestorming.cartodb.com/u/bkx/api/v2/viz/' + interactive + '/viz.json', {
         zoomControl: false,
         fullscreen: false,
-        loaderControl: false
+        loaderControl: false,
+        detectRetina: true
     }).done(function(vis, layers) {
 
     });
     cartodb.createVis('map-live', 'https://bikestorming.cartodb.com/u/bkx/api/v2/viz/' + live + '/viz.json', {
         zoomControl: false,
         fullscreen: false,
-        loaderControl: false
+        loaderControl: false,
+        detectRetina: true
     }).done(function(vis, layers) {
 
     });
@@ -29,7 +31,7 @@ function init() {
         currentViz = 'live';
         switchToMap('live', live);
         toggleOnStatus();
-        $('#bk-selected-map').html('LIVE');
+        $('#bk-selected-map').html('ANIMATED');
     })
     $('[data-id=interactive]')[0].addEventListener('click', function() {
         if (currentViz == 'interactive') return false;

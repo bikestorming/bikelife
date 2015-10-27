@@ -84,8 +84,7 @@ body {
 }
 
 .problem .infowindow-header {
-    background-color: rgba(255, 0, 0, 0.52);
-    ;
+    background-color: rgba(255, 68, 85, 0.52);
 }
 
 .infowindow-header .user {
@@ -125,11 +124,20 @@ span {
     letter-spacing: 1px;
 }
 
-div.cartodb-popup.header.v2.header {
+div.cartodb-popup.header.v2.cool.header {
     width: 300px !important;
     -moz-box-shadow: 0 0 10px 8px rgba(51, 255, 255, 0.2);
     -webkit-box-shadow: 0 0 10px 8px rgba(51, 255, 255, 0.2);
     box-shadow: 0 0 10px 8px rgba(51, 255, 255, 0.2);
+    border-radius: 1px;
+    background-color: transparent;
+}
+
+div.cartodb-popup.header.v2.problem.header {
+    width: 300px !important;
+    -moz-box-shadow: 0 0 10px 8px rgba(255, 68, 85, 0.2);
+    -webkit-box-shadow: 0 0 10px 8px rgba(255, 68, 85, 0.2);
+    box-shadow: 0 0 10px 8px rgba(255, 68, 85, 0.2);
     border-radius: 1px;
     background-color: transparent;
 }
@@ -142,8 +150,12 @@ div.cartodb-popup.v2.cool div.cartodb-popup-content-wrapper {
     background-color: rgba(50, 133, 133, 0.8) !important;
 }
 
-div.cartodb-popup.v2.header.with-image a.cartodb-popup-close-button {
+div.cartodb-popup.v2.cool.header.with-image a.cartodb-popup-close-button {
     background: rgba(50, 133, 133, 0.8);
+}
+
+div.cartodb-popup.v2.problem.header.with-image a.cartodb-popup-close-button {
+    background: rgba(255, 68, 85, 0.8);
 }
 
 div.cartodb-popup.v2.header a.cartodb-popup-close-button:after, div.cartodb-popup.v2.header a.cartodb-popup-close-button:before {
@@ -155,11 +167,11 @@ div.cartodb-popup.v2.cool:before {
 }
 
 div.cartodb-popup.v2.problem div.cartodb-popup-content-wrapper {
-    background-color: rgba(255, 0, 0, 0.71) !important;
+    background-color: rgba(255, 68, 85, 0.71) !important;
 }
 
 div.cartodb-popup.v2.problem:before {
-    border-top: 14px solid rgba(255, 0, 0, 0.71);
+    border-top: 14px solid rgba(255, 68, 85, 0.71);
 }
 
 div.cartodb-popup p {
@@ -171,9 +183,14 @@ div.cartodb-popup.header.with-image div.cartodb-popup-header {
     max-height: 257px;
 }
 
-div.cartodb-popup.v2.header.with-image div.cartodb-popup-header .cover {
+div.cartodb-popup.v2.cool.header.with-image div.cartodb-popup-header .cover {
     height: 290px;
     background-color: rgba(50, 133, 133, 0.71) !important;
+}
+
+div.cartodb-popup.v2.problem.header.with-image div.cartodb-popup-header .cover {
+    height: 290px;
+    background-color: rgba(255, 68, 85, 0.71) !important;
 }
 
 .leaflet-container .leaflet-control-attribution {
