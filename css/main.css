@@ -236,16 +236,13 @@ div.cartodb-timeslider {
 div.cartodb-timeslider p {
     height: 84px;
     line-height: 84px;
+    color: #fff;
 }
 
 div.cartodb-timeslider ul li {
     height: 84px;
     line-height: 84px;
     border-right: 1px solid #8833FF;
-}
-
-div.cartodb-timeslider p {
-    color: rgba(255, 255, 255, .9);
 }
 
 div.cartodb-timeslider .slider-wrapper {
