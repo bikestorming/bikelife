@@ -223,6 +223,7 @@ div.cartodb-timeslider {
     box-shadow: none;
     border: 1px solid #8833FF;
     bottom: 40px !important;
+    border-radius: 40px;
 }
 
 div.cartodb-timeslider p {
@@ -249,11 +250,11 @@ div.cartodb-timeslider .ui-slider {
 }
 
 div.cartodb-timeslider .ui-slider .ui-slider-range {
-    background-color: #A164F5;
+    background-color: #fff;
 }
 
 div.cartodb-timeslider .ui-slider .ui-slider-handle {
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: #fff;
 }
 
 li.controls {
@@ -298,4 +299,36 @@ div.cartodb-zoom a.zoom_in {
 div.cartodb-zoom a.zoom_out {
     background: url('/img/zoom-out.svg') no-repeat center center rgba(137, 64, 255, 0.9) !important;
     border-radius: 0 0 20px 20px !important;
+}
+
+div.cartodb-timeslider ul li.time {
+    position: absolute;
+    top: 60px;
+    left: 100px;
+    border: 0;
+}
+
+div.cartodb-timeslider ul li.last {
+    padding: 0 20px;
+}
+
+div.cartodb-timeslider ul li.controls {
+    display: none;
+}
+
+div.cartodb-timeslider .ui-slider-horizontal {
+    height: 2px !important;
+}
+
+div.cartodb-timeslider .ui-slider-horizontal .ui-slider-handle {
+    top: -4px !important;
+}
+
+div.cartodb-timeslider .ui-slider .ui-slider-handle {
+    background: #fff !important;
+    border-radius: 0 !important;
+    width: 10px !important;
+    height: 10px !important;
+    transform: rotate(44deg);
+    border: none !important;
 }
